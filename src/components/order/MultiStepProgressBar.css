@@ -1,0 +1,43 @@
+.verticalProgressBar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 300px; /* Adjust height as needed */
+}
+
+.progressContainer {
+  width: 0.3rem;
+  height: 14rem;
+  position: absolute;
+  background-color: #f282904d;
+  margin-left: 1.7rem;
+  margin-bottom: 9rem;
+}
+
+.progressBar {
+  background-color: #f282904d;
+  transition: height 0.3s ease;
+}
+
+.stepLabels {
+  display: flex;
+  flex-direction: column;
+}
+
+.stepLabel {
+  color: white;
+  font-weight: bold;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2.5rem;
+  background-color: #f282904d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem; /* Adjust spacing between labels */
+}
+
+.stepLabel.accomplished {
+  background-color: #f28290;
+}

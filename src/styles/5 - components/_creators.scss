@@ -1,0 +1,99 @@
+.creators-grid {
+  width: 120%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  // grid-gap: 1rem;
+  margin-left: 2rem;
+  padding:0;
+
+  @include mobile {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+.creators-card {
+  margin-top: 2rem;
+  width: 65%;
+  height: 100%;
+  border: 1px solid $border-color;
+  text-align: center;
+  position: relative;
+  border:none;
+  // background: $white;
+  // display:grid;
+  // box-shadow: 0 10px 15px rgba(0, 0, 0, .05);
+  overflow: hidden;
+  // margin: auto;
+  // animation: slide-up .3s ease;
+
+
+
+  @include mobile {
+    height: 200px;
+  }
+}
+
+
+
+.creators-card-check {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: $green;
+  z-index: 1;
+}
+
+
+
+.creators-card-content {
+  padding: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.creators-card-img-wrapper {
+  width: 100%;
+  height: 100%;
+  // padding: 0 $m-size;
+  margin: auto;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+
+  @include mobile {
+    height: 8rem;
+  }
+}
+
+.creators-details {
+  padding: 0;
+  margin-top:1rem;
+  margin-left:1rem;
+}
+.creators-card-name {
+  width: 100%;
+  height: 1.5rem;
+  margin: 0;
+  color:black;
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+
+  // white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.creators-card-position {
+  color: grey;
+  text-align: center;
+}
+
+.creators-button {
+  background-color:#F28290;
+  border-radius:5rem;
+  border:none;
+  color:white;
+  height:5rem;
+  width:20rem;
+}
+

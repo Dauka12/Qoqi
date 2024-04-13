@@ -1,0 +1,37 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "public": "Y",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "emulators": {
+    "firestore": {
+      "port": "4000"
+    }
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "functions": {
+    "predeploy": [
+      "yarn --cwd \"$RESOURCE_DIR\" run lint"
+    ],
+    "source": "functions"
+  }
+}

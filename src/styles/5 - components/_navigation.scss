@@ -1,0 +1,131 @@
+.navigation {
+  width: 100%;
+  height: 10rem;
+  background: $background-color;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 5rem;
+  padding-top: 0rem;
+  position: absolute;
+  padding-left: 12rem;
+  top: 0;
+  transform: translateY(0);
+  z-index: map-get($z-index, navigation);
+  box-shadow: none;
+  border-bottom: 1px solid black;
+  @include bezier-transition(transform, 0.3s, ease);
+
+  @include tablet {
+    padding: 0.5rem 2rem;
+  }
+
+  @include mobile {
+    padding: 0 $s-size;
+    position: fixed;
+  }
+
+  .logo {
+    height: inherit;
+    margin-right: 2rem;
+    display: flex;
+    margin-top:2rem;
+  }
+
+  .logo img {
+    width: 3rem;
+    height: inherit;
+    object-fit: contain;
+  }
+
+  .logo a {
+    display: block;
+    height: 100%;
+  }
+
+  .searchbar {
+    width: 300px;
+  }
+}
+
+.navigation-admin {
+  height: 6rem;
+  background: $white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  padding: 0.5rem $l-size;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem;
+  text-align: left;
+  width: 35%;
+}
+
+.navigation-menu-main {
+  padding-top: 0.8rem;
+  padding-left: 3.8rem;
+  margin-right: 2rem;
+  flex-grow: 1;
+  width: 100%;
+
+  li {
+    display: inline-block;
+    text-align: center; /* Aligns text horizontally in the center */
+    justify-content: center; /* Aligns content horizontally in the center */
+    align-items: center;
+
+    a {
+      padding-top:1rem;
+      padding: 1.3rem 1.4rem 1rem 1.4rem;
+      font-size: 1.4rem;
+      opacity: 0.5;
+      border: 1px solid black;
+      border-radius: 1rem;
+      margin-left: 2rem;
+      
+
+      &:hover {
+        background: $background-color-01;
+      }
+    }
+  }
+}
+
+.navigation-menu-item {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-action {
+  display: flex;
+  align-items: center;
+  margin-left: $xxl-size;
+}
+
+.navigation-menu-link {
+  color: $heading-color;
+  padding: $xs-size $m-size;
+  text-decoration: none;
+  font-size: $font-small;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+
+  &:hover {
+    text-decoration: none;
+    background: $background-color-01;
+  }
+}
+
+.navigation-menu-active {
+  font-weight: bold;
+  opacity: 1 !important;
+}

@@ -1,0 +1,53 @@
+.home {
+  width: 100%;
+}
+
+.home-featured {
+  margin: 5rem;
+  margin-top: 10rem;
+}
+
+.featured {
+  width: 100%;
+}
+
+.filter-buttons {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 100%;
+  height: 5rem;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.scrollable-carousel {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: transparent transparent; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer, Edge */
+  scrollbar-width: none; /* For Chrome, Safari */
+}
+
+.scrollable-carousel::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari */
+}
+
+.filter-buttons-active {
+  margin-top: 1rem;
+  margin-left: 0;
+  width: 100%;
+  background-color: #f28290;
+  color: white;
+  border-radius: 12px;
+  border: 1px solid #f28290;
+}
+
+.additional-buttons {
+  width: 10%;
+  height: 100%;
+  border-radius: 10rem;
+}
+
